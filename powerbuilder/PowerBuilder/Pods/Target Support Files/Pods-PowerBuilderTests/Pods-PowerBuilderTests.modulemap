@@ -1,6 +1,0 @@
-framework module Pods_PowerBuilderTests {
-  umbrella header "Pods-PowerBuilderTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
