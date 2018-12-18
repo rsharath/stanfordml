@@ -1,5 +1,5 @@
 //
-//  workoutTableViewCell.swift
+//  WorkoutListingTableViewCell.swift
 //  PowerBuilder
 //
 //  Created by Sharath Rajasekar on 10/9/18.
@@ -9,12 +9,13 @@
 import Foundation
 import UIKit
 
-class workoutTableViewCell : UITableViewCell {
-    @IBOutlet weak var workoutTitleLabel: UILabel!
+class WorkoutListingTableViewCell : UITableViewCell {
+    
+    @IBOutlet weak var exerciseLabel: UILabel!
     
     func configureWith(exerciseTitle: String) {
         print(exerciseTitle)
-        //workoutTitleLabel.text = exerciseTitle
+        exerciseLabel.text = exerciseTitle
     }
 }
 

@@ -10,32 +10,37 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="workoutCell" id="6i6-b1-BaO" customClass="workoutTableViewCell" customModule="PowerBuilder" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCell" rowHeight="44" id="6i6-b1-BaO" customClass="WorkoutListingTableViewCell" customModule="PowerBuilder" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6i6-b1-BaO" id="Mkr-Od-aUK">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyH-R3-uwH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <color key="backgroundColor" red="0.35189249509999998" green="0.66454825129999995" blue="0.2265606033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hp-1e-Y4s">
+                        <rect key="frame" x="9" y="11" width="352" height="27"/>
+                        <color key="backgroundColor" red="0.74117647058823533" green="0.91764705882352937" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="44" id="Dt9-KX-wjx"/>
+                            <constraint firstAttribute="height" constant="27" id="m0b-kK-REa"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="0.74117647058823533" green="0.91764705882352937" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="LyH-R3-uwH" firstAttribute="top" secondItem="Mkr-Od-aUK" secondAttribute="top" id="55k-gc-fyl"/>
-                    <constraint firstItem="LyH-R3-uwH" firstAttribute="leading" secondItem="Mkr-Od-aUK" secondAttribute="leading" id="Gys-Rg-6aP"/>
-                    <constraint firstAttribute="trailing" secondItem="LyH-R3-uwH" secondAttribute="trailing" id="iaQ-mI-aD6"/>
-                    <constraint firstAttribute="bottom" secondItem="LyH-R3-uwH" secondAttribute="bottom" constant="-0.5" id="mqF-kI-o6f"/>
+                    <constraint firstItem="3Hp-1e-Y4s" firstAttribute="top" secondItem="Mkr-Od-aUK" secondAttribute="top" constant="11" id="FFH-0b-aKG"/>
+                    <constraint firstAttribute="trailing" secondItem="3Hp-1e-Y4s" secondAttribute="trailing" constant="14" id="Nlb-86-qvt"/>
+                    <constraint firstItem="3Hp-1e-Y4s" firstAttribute="top" secondItem="Mkr-Od-aUK" secondAttribute="top" constant="11" id="PYT-yr-DRF"/>
+                    <constraint firstAttribute="trailing" secondItem="3Hp-1e-Y4s" secondAttribute="trailing" constant="14" id="UW5-fY-8dg"/>
+                    <constraint firstItem="3Hp-1e-Y4s" firstAttribute="leading" secondItem="Mkr-Od-aUK" secondAttribute="leading" constant="9" id="jsU-0W-g9m"/>
+                    <constraint firstItem="3Hp-1e-Y4s" firstAttribute="leading" secondItem="Mkr-Od-aUK" secondAttribute="leading" constant="9" id="n51-AT-vAw"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="exerciseLabel" destination="3Hp-1e-Y4s" id="0cE-OB-1zE"/>
+            </connections>
             <point key="canvasLocation" x="-870.28985507246387" y="270.53571428571428"/>
         </tableViewCell>
     </objects>
